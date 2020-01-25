@@ -1,0 +1,293 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  font-family: sans-serif;
+  text-decoration: none; }
+
+@media only screen and (max-width: 480px) {
+  #datum {
+    display: none; }
+
+  #banner1 {
+    width: 137%;
+    margin-top: 5.5%; }
+
+  #banner2 {
+    display: none; }
+
+  #banner3 {
+    display: none; }
+
+  #banner4 {
+    display: none; }
+
+  #iphonedesktop {
+    display: none; }
+
+  body {
+    background-color: white;
+    min-width: 479px; }
+    body a {
+      text-decoration: none;
+      color: #F3F3F3; }
+
+  #container {
+    font-family: sans-serif;
+    width: 50%; }
+
+  header {
+    background-color: #5C191A; }
+    header #topheader {
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 5%; }
+    header #newspaperCF {
+      margin: 2% 0% 2.5% 0%;
+      width: 55%; }
+    header #fswd1 {
+      display: none; }
+    header #lowerheader {
+      background-color: #1A1A1A; }
+    header #lowerheader ul {
+      color: #F3F3F3;
+      display: flex;
+      justify-content: space-between;
+      width: 60%;
+      margin: auto;
+      list-style-type: none; }
+    header #lowerheader li {
+      font-size: 150%;
+      margin: 2% 0% 2% 0%; }
+
+  main .topnews, main .topnews2 {
+    display: flex;
+    justify-content: flex-end; }
+  main .topnews p, main .topnews2 p {
+    background-color: #DDDDDD;
+    color: #5E5E5E;
+    font-size: 145%;
+    font-weight: bold;
+    text-indent: 2%;
+    width: 98%;
+    margin: 2% 0% 2% 0%;
+    padding: 1% 0% 1% 0%; }
+  main #tnimages {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 1%; }
+  main .imgcont, main .imgcont2 {
+    width: 48%;
+    margin: 2% 1% 2% 1%;
+    position: relative; }
+  main #tnimages img {
+    width: 100%;
+    min-height: 180px;
+    object-fit: cover; }
+  main .imgcont p, main .imgcont2 p {
+    color: #F3F3F3;
+    background-color: #171717;
+    font-size: 90%;
+    padding: 3% 2% 3% 2%;
+    min-height: 40px;
+    position: absolute;
+    bottom: 0px; }
+
+  footer {
+    background-color: #171717;
+    color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10%;
+    height: 250px;
+    width: 101%; }
+    footer #footernav ul {
+      color: #F3F3F3;
+      display: flex;
+      justify-content: space-between;
+      width: 60%;
+      margin: auto;
+      list-style-type: none;
+      margin-top: 5%; }
+    footer #footernav li {
+      font-size: 130%;
+      margin: 2% 0% 2% 0%; }
+    footer #footerlogo {
+      width: 60%;
+      margin: auto; }
+    footer #footertext {
+      align-self: center;
+      margin-bottom: 5%;
+      font-size: 120%; } }
+@media only screen and (min-width: 481px) {
+  #iphonemobile {
+    display: none; }
+
+  body {
+    background-color: white;
+    max-width: 1920px;
+    margin: auto; }
+    body a {
+      text-decoration: none;
+      color: #F3F3F3; }
+
+  #container {
+    font-family: sans-serif;
+    width: 85%;
+    margin: auto; }
+
+  header {
+    background-color: #5C191A; }
+    header #topheader {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 3%;
+      margin-right: 3%; }
+    header #newspaperCF {
+      margin: 2% 0% 2.5% 0%;
+      width: 25%;
+      padding: 1% 0%; }
+    header #fswd1 {
+      width: 60%;
+      padding: 1% 0%; }
+    header #lowerheader {
+      background-color: #1A1A1A; }
+    header #lowerheader ul {
+      color: #F3F3F3;
+      display: flex;
+      justify-content: flex-start;
+      width: 40%;
+      list-style-type: none; }
+    header #lowerheader ul a {
+      margin-left: 5%; }
+    header #lowerheader a li {
+      font-size: 140%;
+      margin: 2% 0% 2% 0%; }
+
+  main #datum {
+    font-size: 110%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1%; }
+  main .topnews {
+    display: flex;
+    justify-content: flex-end; }
+  main .topnews p {
+    background-color: #DDDDDD;
+    color: #5E5E5E;
+    font-size: 130%;
+    font-weight: bold;
+    text-indent: 2%;
+    width: 98%;
+    margin: 1% 0% 2% 0%;
+    padding: 1% 0% 1% 0%; }
+  main .topnews2 {
+    display: flex;
+    justify-content: flex-end; }
+  main .topnews2 p {
+    background-color: #DDDDDD;
+    color: #5E5E5E;
+    font-size: 130%;
+    font-weight: bold;
+    text-indent: 2%;
+    width: 98%;
+    margin: 1% 0% 2% 0%;
+    padding: 1% 0% 1% 0%; }
+  main #tnimages {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 1.2%; }
+  main .imgcont {
+    width: 31%;
+    margin: 2% 1% 2% 1%;
+    position: relative; }
+  main .imgcont2 {
+    width: 47.5%;
+    margin: 2% 1% 2% 1%;
+    position: relative; }
+  main #tnimages img {
+    width: 100%;
+    min-height: 180px;
+    object-fit: cover; }
+  main .imgcont p {
+    color: #F3F3F3;
+    background-color: #171717;
+    font-size: 90%;
+    padding: 3% 2% 3% 2%;
+    min-height: 50px;
+    width: 96%;
+    position: absolute;
+    bottom: 0px; }
+  main .imgcont2 p {
+    color: #F3F3F3;
+    background-color: #171717;
+    font-size: 110%;
+    padding: 3% 2% 3% 2%;
+    min-height: 30px;
+    width: 96%;
+    position: absolute;
+    bottom: 0px; }
+  main #firstsix {
+    width: 90%; }
+  main #lastfour {
+    width: 90%;
+    height: 90%; }
+  main #banner1 {
+    display: none; }
+  main #banner2 {
+    margin-left: 1%;
+    max-width: 110px;
+    width: 120%; }
+  main #banner2right {
+    display: flex; }
+  main #banner3 {
+    display: flex;
+    margin: auto;
+    width: 70%; }
+  main #banner4right {
+    display: flex;
+    align-content: strech; }
+  main #banner4 {
+    margin: 1% 0% 1% 1%;
+    width: 115%;
+    max-width: 200px;
+    max-height: 1200px;
+    padding-top: 1%;
+    object-fit: cover; }
+
+  footer {
+    background-color: #171717;
+    color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10%;
+    height: 250px; }
+    footer #footernav ul {
+      color: #F3F3F3;
+      display: flex;
+      justify-content: flex-start;
+      width: 90%;
+      margin: auto;
+      list-style-type: none;
+      margin-top: 3%; }
+    footer #footernav li {
+      font-size: 130%;
+      margin: 0% 1% 0% 1%; }
+    footer #footerlogo {
+      height: 25%;
+      max-height: 90px;
+      margin-right: 3%;
+      align-self: flex-end;
+      margin-bottom: 5%;
+      padding-top: 2%; }
+    footer #footertext {
+      align-self: center;
+      margin-bottom: 2%;
+      font-size: 120%; } }
+
+/*# sourceMappingURL=style.css.map */

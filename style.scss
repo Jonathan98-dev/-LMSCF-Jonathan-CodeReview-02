@@ -1,0 +1,607 @@
+
+//Mobile layout is a little messed up but i couldn't figure out why. I started mobile first
+//and it work all fine (Desktop and mobile layout), than i wanted to link the banners which 
+//messed everything up... forgot to backup. 
+
+
+$headerColor: #5C191A;
+$lowerheaderColor: #1A1A1A;
+$textColor: #F3F3F3;
+$grey: #DDDDDD;
+$textheading: #5E5E5E;
+$imagetextbg: #171717;
+$footerbg: #171717;
+
+@mixin headerandfooterpropslistmobile
+{
+	color:$textColor;
+
+	display: flex;
+	justify-content: space-between;
+	width: 60%;
+	margin: auto;
+
+	list-style-type: none;
+}
+
+
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+body
+{
+	font-family: sans-serif;
+	text-decoration: none;
+}
+
+
+
+@media only screen and (max-width: 480px)
+
+{
+	
+	#datum
+	{
+		display: none;
+	}
+
+	#banner1
+	{
+		width:137%;
+		margin-top:5.5%;
+	}
+
+	#banner2
+	{
+		display: none;
+	}
+
+	#banner3
+	{
+		display: none;
+	}
+
+	#banner4
+	{
+		display: none;
+	}
+
+	#iphonedesktop
+	{
+		display: none;
+	}
+
+	body
+	{
+		background-color: white;
+		min-width:479px;
+
+		a
+		{
+			text-decoration: none;
+			color:$textColor;
+		}
+	}
+	
+	#container
+	{
+		font-family: sans-serif;
+		width:50%;//i dont know how to fix the mobile layout problem...somethin messes everything up
+	}
+
+	header
+	{
+		background-color: $headerColor;
+		
+		//styles topheader (mobile)
+
+		#topheader
+		{
+			display: flex;
+			justify-content: flex-start;
+			margin-left: 5%;
+
+
+		}
+
+		#newspaperCF
+		{
+			margin: 2% 0% 2.5% 0%;
+			width: 55%;
+		}
+
+		#fswd1
+		{
+		display:none;
+		}
+
+		//styles lowerheader (mobile)
+
+		#lowerheader
+		{
+			background-color: $lowerheaderColor;
+		}
+		
+		
+
+		#lowerheader ul
+		{
+			@include headerandfooterpropslistmobile;
+
+		}
+		
+		#lowerheader li
+		{
+			font-size: 150%;
+
+			margin: 2% 0% 2% 0%;
+		}
+
+	}
+
+
+	//styles main (mobile)
+
+	main
+	{
+		
+		//style for subheaders (mobile)
+
+		.topnews, .topnews2
+		{
+		display: flex;
+		justify-content: flex-end;
+		}
+
+		.topnews p, .topnews2 p
+		{
+			background-color: $grey; 
+			color: $textheading;
+			font-size: 145%;
+			font-weight: bold;
+			text-indent:2%;
+
+			width:98%;
+			margin: 2% 0% 2% 0%;
+			padding: 1% 0% 1% 0%;
+		}
+		
+
+		//id for div with all images (mobile)
+
+		#tnimages
+		{		
+			display: flex;
+			flex-wrap: wrap;
+
+			
+			width:100%;
+
+			margin-left:1%;
+			
+		}
+		
+		//container for getting text over images (mobile)
+
+		.imgcont, .imgcont2
+		{
+			width: 48%;
+			margin: 2% 1% 2% 1%;
+			position: relative;
+		}
+
+		#tnimages img
+		{
+			width: 100%;
+			min-height:180px;
+			object-fit: cover;
+		}
+
+		.imgcont p, .imgcont2 p
+		{
+			color: $textColor;
+			background-color: $imagetextbg;
+			font-size: 90%;
+
+			padding: 3% 2% 3% 2%;
+			min-height: 40px;
+
+
+
+
+			position: absolute;
+			bottom: 0px;
+
+			
+		}
+
+	}
+	
+	//style footer
+
+	footer
+	{
+		background-color: $footerbg;
+		color: $textColor;
+
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+
+		margin-top: 10%;
+		height: 250px;
+
+		width: 101%;
+
+		#footernav ul
+		{
+			@include headerandfooterpropslistmobile;
+
+			margin-top:5%;
+		}
+		
+		#footernav li
+		{
+			font-size: 130%;
+
+			margin: 2% 0% 2% 0%;
+		}
+
+		#footerlogo
+		{
+			width: 60%;
+			margin: auto;
+		}
+		
+		#footertext
+		{
+			align-self: center;
+			margin-bottom: 5%;
+			font-size: 120%;
+		}
+	}
+
+}
+
+
+
+
+@media only screen and (min-width: 481px)
+{
+	#iphonemobile
+	{
+		display:none;
+	}
+		
+	body
+	{
+		background-color: white;
+		max-width:1920px;
+		margin:auto;
+
+		a
+		{
+			text-decoration: none;
+			color:$textColor;
+		}
+	}
+	
+	#container
+	{
+		font-family: sans-serif;
+		width:85%;
+		margin:auto;
+	}
+
+	header
+	{
+		background-color: $headerColor;
+		
+		//styles topheader (Desktop)
+
+		#topheader
+		{
+			display: flex;
+			justify-content: space-between;
+			margin-left: 3%;
+			margin-right: 3%;
+		}
+		
+		#newspaperCF
+		{
+			margin: 2% 0% 2.5% 0%;
+			width: 25%;
+			padding: 1% 0%;
+		}
+
+		#fswd1
+		{
+			width:60%;
+
+			padding: 1% 0%;
+		}
+
+		//styles lowerheader (Desktop)
+
+		#lowerheader
+		{
+			background-color: $lowerheaderColor;
+		}
+
+		#lowerheader ul
+		{
+			color:$textColor;
+
+			display: flex;
+			justify-content: flex-start;
+			width: 40%;
+			
+
+			list-style-type: none;
+		}	
+
+		#lowerheader ul a
+		{
+			margin-left: 5%;
+		}
+		
+		#lowerheader a li
+		{
+			font-size: 140%;
+
+			margin: 2% 0% 2% 0%;
+		}
+
+		//styles lowerheader (Desktop)
+
+		
+		
+		
+
+	}
+
+
+	//styles main (Desktop)
+
+	main
+	{
+		
+		#datum
+		{
+			font-size: 110%;
+			display:flex;
+			justify-content: flex-end;
+			margin-top:1%;
+		}
+		
+		
+
+		//style for subheaders (Desktop)
+
+		.topnews
+		{
+		display: flex;
+		justify-content: flex-end;
+		}
+
+		.topnews p
+		{
+			background-color: $grey; 
+			color: $textheading;
+			font-size: 130%;
+			font-weight: bold;
+			text-indent:2%;
+
+			width:98%;
+			margin: 1% 0% 2% 0%;
+			padding: 1% 0% 1% 0%;
+		}
+	
+
+		//topnews2 for styling "popular" subheading in desktop (Desktop)
+		.topnews2
+		{
+		display: flex;
+		justify-content: flex-end;
+		}
+
+		.topnews2 p
+		{
+			background-color: $grey; 
+			color: $textheading;
+			font-size: 130%;
+			font-weight: bold;
+			text-indent:2%;
+
+			width:98%;
+			margin: 1% 0% 2% 0%;
+			padding: 1% 0% 1% 0%;
+		}
+		
+		
+
+		//id for div with all images (Desktop)
+		#tnimages
+		{		
+			display: flex;
+			flex-wrap: wrap;
+
+			
+			width:100%;
+
+			margin-left:1.2%;
+			
+		}
+		
+		//container for getting text over images (Desktop)
+
+		.imgcont
+		{
+			width: 31%;
+			margin: 2% 1% 2% 1%;
+			position: relative;
+			
+		}
+		
+		//imgcont2 for getting last 4 images (Desktop)
+
+		.imgcont2
+		{
+			width: 47.5%;
+			margin: 2% 1% 2% 1%;
+			position: relative;
+			
+		}
+		
+		#tnimages  img
+		{
+			width: 100%;
+			min-height:180px;
+			object-fit: cover;
+		}
+
+		.imgcont p
+		{
+			color: $textColor;
+			background-color: $imagetextbg;
+			font-size: 90%;
+
+			padding: 3% 2% 3% 2%;
+			min-height: 50px;
+			width:96%;
+
+			position: absolute;
+			bottom: 0px;
+		}
+		
+		//imgcont2 p for getting text over image (Desktop)
+
+		.imgcont2 p
+		{
+			color: $textColor;
+			background-color: $imagetextbg;
+			font-size: 110%;
+
+			padding: 3% 2% 3% 2%;
+			min-height: 30px;
+			width:96%;
+
+			position: absolute;
+			bottom: 0px;
+		}
+	
+		//firstsix for banner2 on left
+
+		#firstsix
+		{
+			
+			width: 90%;
+		}
+		
+		#lastfour
+		{		
+			width: 90%;
+			height:90%;
+		}
+
+		#banner1
+		{
+				display:none;
+		}
+		
+		#banner2
+		{
+			margin-left: 1%;
+			max-width:110px;
+			width: 120%;
+
+		}
+		//for banner2 plaement on left
+
+		#banner2right
+		{			
+			display: flex;
+		}
+
+		#banner3
+		{
+			display:flex;
+			margin:auto;
+			width: 70%;
+		}
+		
+		#banner4right
+		{
+			display: flex;
+			align-content: strech;
+		}
+
+		#banner4
+		{
+		margin: 1% 0% 1% 1%;
+		width: 115%;
+		max-width: 200px;
+		max-height: 1200px;
+		padding-top:1%;
+		object-fit: cover;
+			
+		}
+
+	}
+	
+	//style footer (Desktop)
+
+	footer
+	{
+		background-color: $footerbg;
+		color: $textColor;
+
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+
+		margin-top: 10%;
+		height: 250px;
+
+		#footernav ul
+		{
+			color:$textColor;
+
+			display: flex;
+			justify-content: flex-start;
+			width: 90%;
+			margin: auto;
+
+			list-style-type: none;
+			margin-top: 3%;
+			
+		}
+		
+		#footernav li
+		{
+			font-size: 130%;
+
+			margin: 0% 1% 0% 1%;
+		}
+
+		#footerlogo
+		{
+			height:25%;
+			max-height:90px;
+			margin-right: 3%;
+			align-self: flex-end;
+			margin-bottom:5%;
+			padding-top:2%;
+		}
+		
+		#footertext
+		{
+			align-self: center;
+			margin-bottom: 2%;
+			font-size: 120%;
+		}
+	}
+}
